@@ -16,7 +16,8 @@
             <div class="col-12">
                 <h1>Lab 2 - Problem 1</h1>
                 <button type="button" class="btn btn-success" onclick="startThings()">START</button>
-                <div id="output" class="mt-5"></div>
+                <div id="output" class="mt-5">
+                </div>
             </div>
         </div>
     </div>
@@ -28,14 +29,47 @@
 <!-- Lab 2 - Part 1 JavaScript -->
 <script>
     function startThings(){
-        let romanNumeral; // do not modify
-        // your code goes here
-        // be sure to assign the roman numeral to the variable romanNumeral
-        // it will be used to display it on the web page using the code below
+        let inputNum = prompt("Enter an integer from 1 and 10");
+        // alert(inputNum);
 
+   
+        let arabicNum =parseInt(inputNum);
+        // alert (arabicNum);
+    
+        if (arabicNum == 1) {
+            var romanNumeral ="I";
+         }       
+        else if (arabicNum == 2) {
+            var romanNumeral = "II"
+        }       
+        else if (arabicNum == 3) {
+            var romanNumeral = "III";
+        }       
+        else if (arabicNum == 4) {
+            var romanNumeral = "IV";
+        }       
+        else if (arabicNum == 5) {
+            var romanNumeral = "V";
+        }       
+        else if (arabicNum == 6) {
+            var romanNumeral = "VI";
+        }      
+         else if (arabicNum == 7) {
+            var romanNumeral = "VII";
+        }      
+         else if (arabicNum == 8) {
+            var romanNumeral = "IIX";
+        }       
+        else if (arabicNum == 9) {
+            var romanNumeral = "IX";
+        }    
+        else if (arabicNum == 10) {
+            var romanNumeral = "X";
+    } else {
+        prompt("You didn't follow the directions!! INTEGER FROM 1 TO 10 ONLY!!!");
+    }
 
-
-        // do not modify start
+    
         let outputDiv = document.getElementById('output');
         outputDiv.innerHTML = romanNumeral;
         // do not modify end
